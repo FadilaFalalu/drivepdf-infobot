@@ -75,10 +75,10 @@ export const mockPdfDocuments: PdfDocument[] = [
   },
   {
     id: "pdf-009",
-    title: "Natural Language Processing Techniques",
-    description: "Advanced methods for processing and analyzing human language with AI.",
-    url: "https://drive.google.com/file/d/9yz0567/view",
-    keywords: ["nlp", "natural language processing", "text analysis", "sentiment analysis", "language models"],
+    title: "The Moderating Effects of Social Media Networking Usage on Adversity Quotient and Academic Performance",
+    description: "moderation model research that will investigate the moderating variable Social Media Networking Usage.",
+    url: "https://drive.google.com/file/d/1tpKnmoYsM4pBAKPeTKV7y8MIWsFV3tUZ/view?usp=sharing",
+    keywords: ["Adversity Quotient", "Social Media Networking", "Academic Performance", "Academic Adversities","Social Media Usage"],
     lastModified: "June 25, 2025",
     fileSize: "6.3 MB"
   },
