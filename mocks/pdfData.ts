@@ -12,19 +12,19 @@ export const mockPdfDocuments: PdfDocument[] = [
   },
   {
     id: "pdf-002",
-    title: "React Native Development Guide",
+    title: "Using Information Retrieval Techniques to Automatically Repurpose Existing Dialogue Datasets for Safe Chatbot Development",
     description: "Best practices and patterns for building cross-platform mobile applications with React Native.",
-    url: "https://drive.google.com/file/d/2def456/view",
-    keywords: ["react native", "javascript", "mobile development", "cross-platform", "typescript"],
+    url: "https://drive.google.com/file/d/1dBwfk_Lh_zqfQ9R2ORMQRtOkbI9ayz6t/view?usp=drive_link",
+    keywords: ["chatbots", "dialogue safety", "generation", "information retrieval", "toxicity, datasete"],
     lastModified: "June 28, 2025",
     fileSize: "3.8 MB"
   },
   {
     id: "pdf-003",
-    title: "Cloud Computing Architecture",
-    description: "Detailed overview of cloud computing models, services, and deployment strategies.",
-    url: "https://drive.google.com/file/d/3ghi789/view",
-    keywords: ["cloud computing", "aws", "azure", "infrastructure", "serverless"],
+    title: "RETRIEVAL BASED CHATBOT SYSTEM",
+    description: "The Health Bot is a retrieval based chatbot which is directed specifically towards people who are suffering from the novel coronavirus.",
+    url: "https://drive.google.com/file/d/17B7jR3M5kKWQJnHdsEwOJbWnoGykUjHy/view?usp=drive_link",
+    keywords: ["Machine Learning", "Deep Learning", "Retrieval Based", "Generative Based" , "Python"],
     lastModified: "July 5, 2025",
     fileSize: "6.1 MB"
   },
