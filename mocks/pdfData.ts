@@ -39,10 +39,10 @@ export const mockPdfDocuments: PdfDocument[] = [
   },
   {
     id: "pdf-005",
-    title: "Cybersecurity Best Practices",
-    description: "Essential security measures and protocols for protecting digital assets and information.",
-    url: "https://drive.google.com/file/d/5mno345/view",
-    keywords: ["cybersecurity", "security", "encryption", "network security", "threats"],
+    title: "Social Media Platform Usage and Academic Performance among High School Students",
+    description: "impact of social media platform usage on academic performance among high school students.",
+    url: "https://drive.google.com/file/d/1MbZOVsNynaa6FCYfvBcz4lzPlD3mY5TB/view?usp=sharing",
+    keywords: ["Social Media Platform", "Academic Performance", "Students Attitude", "Gender", "subject-stream."],
     lastModified: "June 15, 2025",
     fileSize: "4.7 MB"
   },
