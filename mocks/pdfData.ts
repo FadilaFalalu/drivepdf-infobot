@@ -30,10 +30,10 @@ export const mockPdfDocuments: PdfDocument[] = [
   },
   {
     id: "pdf-004",
-    title: "Data Visualization Techniques",
-    description: "Methods and tools for effective data visualization and dashboard creation.",
-    url: "https://drive.google.com/file/d/4jkl012/view",
-    keywords: ["data visualization", "charts", "dashboards", "d3.js", "tableau"],
+    title: "Automated information retrieval and services of graduate school using chatbot system",
+    description: "a chatbot framework that answers questions related to services offered by the public administration..",
+    url: "https://drive.google.com/file/d/1QFpi93_ckgFSw2VgTsQsM97HTsOchfIt/view?usp=drive_link",
+    keywords: ["chatbots", "information retrieval", "context", "human-computer interaction", "natural language processing", "question answering"],
     lastModified: "July 12, 2025",
     fileSize: "5.3 MB"
   },
