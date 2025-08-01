@@ -16,7 +16,7 @@ import Colors from "@/constants/colors";
 
 export default function SearchScreen() {
   const [searchQuery, setSearchQuery] = useState("");
-  const { searchPdfs, results, isLoading, hasSearched } = usePdfSearch();
+  const { searchPdfs, results, isLoading, hasSearched, searchKeywords } = usePdfSearch();
 
   const handleSearch = () => {
     if (searchQuery.trim()) {
@@ -67,13 +67,25 @@ export default function SearchScreen() {
           </View>
         ) : hasSearched ? (
           results.length > 0 ? (
-            <FlatList
-              data={results}
-              keyExtractor={(item) => item.id}
-              renderItem={({ item }) => <PdfResultCard pdf={item} />}
-              contentContainerStyle={styles.resultsContainer}
-              showsVerticalScrollIndicator={false}
-            />
+            <>
+              <View style={styles.resultsHeader}>
+                <Text style={styles.resultsCount}>
+                  Found {results.length} PDF{results.length !== 1 ? 's' : ''}
+                </Text>
+                {searchKeywords.length > 0 && (
+                  <Text style={styles.searchKeywords}>
+                    Keywords: {searchKeywords.join(', ')}
+                  </Text>
+                )}
+              </View>
+              <FlatList
+                data={results}
+                keyExtractor={(item) => item.id}
+                renderItem={({ item }) => <PdfResultCard pdf={item} />}
+                contentContainerStyle={styles.resultsContainer}
+                showsVerticalScrollIndicator={false}
+              />
+            </>
           ) : (
             <View style={styles.emptyContainer}>
               <Text style={styles.emptyTitle}>No PDFs Found</Text>
@@ -140,6 +152,24 @@ const styles = StyleSheet.create({
   },
   disabledButton: {
     backgroundColor: "#b0c4de",
+  },
+  resultsHeader: {
+    backgroundColor: '#fff',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#e0e0e0',
+  },
+  resultsCount: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#333',
+    marginBottom: 4,
+  },
+  searchKeywords: {
+    fontSize: 13,
+    color: '#666',
+    fontStyle: 'italic',
   },
   resultsContainer: {
     padding: 16,
